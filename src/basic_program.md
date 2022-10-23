@@ -43,8 +43,8 @@ fn main() { // define main function
 
 // Below is the second function, which we call in the main function
 
-fn facts() -> &'static str { // facts function and assign output type.
-    let quads = "Cassidy has giant quads"; // assign some facts to a variable using a statement let
+fn facts() -> &'static str { // declare facts function and assign output type
+    let quads = "Cassidy has giant quads"; // assign some facts to a variable using a let statement
     quads // make the expression blast out the facts
 } // close the expression
 
