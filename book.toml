@@ -6,4 +6,8 @@ src = "src"
 title = "Rust Skills"
 
 [output.html.playground]
-editable = true
+editable = true         # allows editing the source code
+copyable = true          # include the copy button for copying code snippets
+copy-js = true           # includes the JavaScript for the code editor
+line-numbers = false     # displays line numbers for editable code
+runnable = true          # displays a run button for rust code
