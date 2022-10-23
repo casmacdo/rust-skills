@@ -22,11 +22,17 @@ fn main() { // define main function
 
 ```
 
-The curly brackets turn the code into an expression. Expressions are code sequences that return values.
+The rust compiler expects the main function to return closed, regular brackets. In contrastm regular Rust functions allow programmers to define output types and return values. For example, the main function below will return an error becasue the Rust compiler expects a different output type.
 
-Given these parameters, the Rust compiler expects the main function to return types that terminate the program. As such, without use of specific type definitions, we need to use the println! macro to return things like the really-important string defined in the  we defined earlier.
+```rust,editable
 
-The compiler expects the main functon to return closed parenthesis, so in this case, we use the println! macro inform people of super-important facts.
+fn main() { // define main function 
+6
+} // close curly bracket and complete expression
+
+```
+
+While the Rust main function allows limited output types, regular functions are more flexable. For example, one can define a function called facts that outputs a static string data type, call that function in the main function, and print the output of facts using the println! macro, as seen below:
 
 ```rust,editable
 
