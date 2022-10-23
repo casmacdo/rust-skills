@@ -4,4 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Rust Skills"
+
+[output.html.playground]
 editable = true
