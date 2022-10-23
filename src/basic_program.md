@@ -22,7 +22,7 @@ fn main() { // define main function
 
 ```
 
-The rust compiler expects the main function to return closed, regular brackets. In contrastm regular Rust functions allow programmers to define output types and return values. For example, the main function below will return an error becasue the Rust compiler expects a different output type.
+The rust compiler expects the main function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the main function will retun an error if the expression output is not what the compiler expects.
 
 ```rust,editable
 
