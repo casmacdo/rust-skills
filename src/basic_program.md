@@ -22,19 +22,24 @@ fn main() { // define main function
 
 ```
 
-The curly brackets turn the code into an expression. Expressions are code sequences that return values. The compiler expects the main functon to return closed parenthesis, so in this case, we use the println! macro to return the super complex math that we instructed the computer to do using the do_math function.
+The curly brackets turn the code into an expression. Expressions are code sequences that return values.
+
+Given these parameters, the Rust compiler expects the main function to return types that terminate the program. As such, without use of specific type definitions, we need to use the println! macro to return things like the really-important string defined in the  we defined earlier.
+
+The compiler expects the main functon to return closed parenthesis, so in this case, we use the println! macro inform people of super-important facts.
 
 ```rust,editable
 
 fn main() { // define main function 
-   let math = do_math(); // use let statement that assigns output of do-math function to math variable
-   println!("Did math, and the answer is: {math}") // print output with friendly message 
+   let truth = facts(); // assign the output of facts to truth using a let statement
+   println!("{}", truth) // print the truth using the println! macro
 }
 
 // Below is the second function, which we call in the main function
 
-fn do_math() -> i32 { // define math function and assign output type. i32 is a 32-bit, signed integer. A signed integer is one that can have a negative sign.
-    6-7 // here is the math. We don't use a semicolon becasue we want the expression to return the result of this math
+fn facts() -> &'static str { // facts function and assign output type.
+    let quads = "Cassidy has giant quads"; // assign some facts to a variable using a statement let
+    quads // make the expression blast out the facts
 } // close the expression
 
 ```
