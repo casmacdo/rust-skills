@@ -1,3 +1,3 @@
 # Summary
 
-- [Basic Functions](./basic_functions.md)
+- [Functions](./functions.md)

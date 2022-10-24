@@ -1,4 +1,4 @@
-# Basic Program
+# Functions
 
 The following is a version of the hello world program in the rust documentation. I changed the traditional "hello world" string for something more educational.
 
