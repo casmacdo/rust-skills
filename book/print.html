@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="basic_program.html"><strong aria-hidden="true">1.</strong> Basic Program</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="basic_functions.html"><strong aria-hidden="true">1.</strong> Basic Functions</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -146,30 +146,30 @@
                         <h1 id="basic-program"><a class="header" href="#basic-program">Basic Program</a></h1>
 <p>The following is a version of the hello world program in the rust documentation. I changed the traditional &quot;hello world&quot; string for something more educational.</p>
 <pre><pre class="playground"><code class="language-rust editable">fn main() { // declare function, name it, and set arguments
-    println!(&quot;Cassidy has giant quads&quot;); // use print ln macro and give string argument
+    println!(&quot;Cassidy has giant quads&quot;); // use println! macro and give string argument
 } // close expression
 </code></pre></pre>
 <p>The program contains three components that have specific roles :</p>
 <ul>
-<li>The main function</li>
+<li>The <em>main</em> function</li>
 <li>The curly brackets</li>
-<li>The println! macro</li>
+<li>The <em>println!</em> macro</li>
 </ul>
-<p>When a rust program runs, the main program is the first part that executes.</p>
+<p>When a rust program runs, the <em>main</em> function is the first part that executes.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
 // instructions for the main function go here
 } // close curly bracket and complete expression
 
 </code></pre></pre>
-<p>The rust compiler expects the main function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the main function will retun an error if the expression output is not what the compiler expects.</p>
+<p>The rust compiler expects the <em>main</em> function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the <em>main</em> function will retun an error if the expression output is not what the compiler expects.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
 6
 } // close curly bracket and complete expression
 
 </code></pre></pre>
-<p>While the Rust main function allows limited output types, regular functions are more flexable. For example, one can define a function called facts that outputs a static string data type, call that function in the main function, and print the output of facts using the println! macro, as seen below:</p>
+<p>While the Rust <em>main</em> function allows limited output types, regular functions are more flexable. For example, one can define a function called <em>facts</em> that outputs a static string data type, call that function in the <em>main</em> function, and print the output of <em>facts</em> using the <strong>println!</strong> macro, as seen below:</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
    let truth = facts(); // assign the output of facts to truth using a let statement
@@ -178,8 +178,8 @@ fn main() { // define main function
 
 // Below is the second function, which we call in the main function
 
-fn facts() -&gt; &amp;'static str { // facts function and assign output type.
-    let quads = &quot;Cassidy has giant quads&quot;; // assign some facts to a variable using a statement let
+fn facts() -&gt; &amp;'static str { // declare facts function and assign output type
+    let quads = &quot;Cassidy has giant quads&quot;; // assign some facts to a variable using a let statement
     quads // make the expression blast out the facts
 } // close the expression
 
