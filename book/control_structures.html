@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Page not found - Rust Skills</title>
-        <base href="/">
+        <title>Control Structures - Rust Skills</title>
 
 
         <!-- Custom HTML head -->
@@ -82,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li><li class="chapter-item expanded "><a href="control_structures.html"><strong aria-hidden="true">2.</strong> Control Structures</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li><li class="chapter-item expanded "><a href="control_structures.html" class="active"><strong aria-hidden="true">2.</strong> Control Structures</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -143,13 +142,35 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="document-not-found-404"><a class="header" href="#document-not-found-404">Document not found (404)</a></h1>
-<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
+                        <h1 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h1>
+<p>Control structures allow programers to insturct computers how to behave when faced with certian conditions.</p>
+<p>Common control structures include:</p>
+<ul>
+<li>if statements</li>
+<li>else statements</li>
+<li>for loops</li>
+<li>while loops</li>
+</ul>
+<p>We can relate the logic of these control sturtures to situations that we encounter in our lives.</p>
+<p>For example: I could be at the grocery store looking at a bag of chips and think to myself: &quot;if I add this bag of chips to my cart, I will likely eat its entire contents before I get home and feel like trash for the rest of the night.&quot;</p>
+<p>A program that executes that logic could look like this:</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main(){ // declare main function
+    let chips=true; // use late statement to exhibit my lack of self control
+    if chips { // declare if statement with boolean condition
+        println!(&quot;I ate the whole bag and feel like trash&quot;) // print result if true
+    } // close if expression
+} // close main function expression
+
+</code></pre></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="functions.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
 
                         <div style="clear: both"></div>
@@ -158,6 +179,9 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="functions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
             </nav>
 

@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li><li class="chapter-item expanded "><a href="control_structures.html"><strong aria-hidden="true">2.</strong> Control Structures</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -182,6 +182,27 @@ fn facts() -&gt; &amp;'static str { // declare facts function and assign output 
     let quads = &quot;Cassidy has giant quads&quot;; // assign some facts to a variable using a let statement
     quads // make the expression blast out the facts
 } // close the expression
+
+</code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h1>
+<p>Control structures allow programers to insturct computers how to behave when faced with certian conditions.</p>
+<p>Common control structures include:</p>
+<ul>
+<li>if statements</li>
+<li>else statements</li>
+<li>for loops</li>
+<li>while loops</li>
+</ul>
+<p>We can relate the logic of these control sturtures to situations that we encounter in our lives.</p>
+<p>For example: I could be at the grocery store looking at a bag of chips and think to myself: &quot;if I add this bag of chips to my cart, I will likely eat its entire contents before I get home and feel like trash for the rest of the night.&quot;</p>
+<p>A program that executes that logic could look like this:</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main(){ // declare main function
+    let chips=true; // use late statement to exhibit my lack of self control
+    if chips { // declare if statement with boolean condition
+        println!(&quot;I ate the whole bag and feel like trash&quot;) // print result if true
+    } // close if expression
+} // close main function expression
 
 </code></pre></pre>
 
