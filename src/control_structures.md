@@ -20,7 +20,7 @@ A program that executes that logic could look like this:
 fn main(){ // declare main function
     let chips=true; // use let statement to exhibit my lack of self control
     if chips { // declare if statement with boolean condition
-        println!("I ate the whole bag and feel like trash") // print result if true
+        println!("I ate the whole bag of chips and feel like trash") // print result if true
     } // close if expression
 } // close main function expression
 
