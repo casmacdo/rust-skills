@@ -150,25 +150,25 @@
 </code></pre></pre>
 <p>The program contains three components that have specific roles :</p>
 <ul>
-<li>The <em>main</em> function</li>
+<li>The <code>main</code> function</li>
 <li>The curly brackets</li>
-<li>The <em>println!</em> macro</li>
+<li>The <code>println!</code> macro</li>
 </ul>
-<p>When a rust program runs, the <em>main</em> function is the first part that executes.</p>
+<p>When a rust program runs, the <code>main</code> function is the first part that executes.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
 // instructions for the main function go here
 } // close curly bracket and complete expression
 
 </code></pre></pre>
-<p>The rust compiler expects the <em>main</em> function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the <em>main</em> function will retun an error if the expression output is not what the compiler expects.</p>
+<p>The rust compiler expects the <code>main</code> function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the <code>main</code> function will retun an error if the expression output is not what the compiler expects.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
 6
 } // close curly bracket and complete expression
 
 </code></pre></pre>
-<p>While the Rust <em>main</em> function allows limited output types, regular functions are more flexable. For example, one can define a function called <em>facts</em> that outputs a static string data type, call that function in the <em>main</em> function, and print the output of <em>facts</em> using the <strong>println!</strong> macro, as seen below:</p>
+<p>While the Rust <code>main</code> function allows limited output types, regular functions are more flexable. For example, one can define a function called <code>facts</code> that outputs a static string data type, call that function in the <code>main</code> function, and print the output of <code>facts</code> using the <code>println!</code> macro, as seen below:</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // define main function 
    let truth = facts(); // assign the output of facts to truth using a let statement
