@@ -33,7 +33,7 @@ Using the first example, we can create an if-else control structure that runs co
 ```rust,editable
 
 fn main(){ // declare main function
-    let chips=true; // use let statement to exhibit my lack of self control
+    let chips=false; // use let statement to exhibit my lack of self control
     if chips { // declare if statement with boolean condition
         println!("I ate the whole bag of chips and feel like trash") // print result if true
     } else { // close if expression
