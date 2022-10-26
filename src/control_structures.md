@@ -37,7 +37,7 @@ fn main(){ // declare main function
     if chips { // declare if statement with boolean condition
         println!("I ate the whole bag of chips and feel like trash") // print result if true
     } else { // close if expression
-        println!("Good work, idiot, you practiced self control") // print supportive message
+        println!("Good work, idiot. You practiced self control!") // print supportive message
     } // close else expression
 } // close main function expression
 
