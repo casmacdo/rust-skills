@@ -28,7 +28,7 @@ fn main(){ // declare main function
 
 Else statements tell the computer to do an action if the first condition is not met.
 
-Using the first example, we can create an if-else control structure that runs code when the first condition is not true: 
+Using the first example, we can create an if-else control structure that runs code when the first condition is not true:
 
 ```rust,editable
 
@@ -37,7 +37,7 @@ fn main(){ // declare main function
     if chips { // declare if statement with boolean condition
         println!("I ate the whole bag of chips and feel like trash") // print result if true
     } else { // close if expression
-        println!("Good work idiot, you practiced self control") // print supportive message
+        println!("Good work, idiot, you practiced self control") // print supportive message
     } // close else expression
 } // close main function expression
 
