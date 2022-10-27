@@ -52,7 +52,7 @@ We can combine let and if statements. These statements might be useful when ther
 fn main(){ // declare main function
     let swim=true; // declare boolen swim variable
     let gorgeous = if swim {["went for a swim", "gorgeous"]} else {["didn't for a swim", "like a bony meat bag"]}; // boolean let-if statement
-    println!("Cassidy {} and his body looks {}", gorgeous[0], gorgeous[1]); // print result of let-if statement
+    println!("Cassidy {}, and his body looks {}", gorgeous[0], gorgeous[1]); // print result of let-if statement
 } // close main expression
 
 ```
