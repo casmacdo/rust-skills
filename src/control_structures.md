@@ -43,9 +43,7 @@ fn main(){ // declare main function
 
 ```
 
-We can combine let and if statements. These statements might be useful when there are variables in our code that are condition-dependent. For example, after I finish a swim workout, my body looks gorgeous. However, on days that I don't swim, my body looks like a bony meat bag.
-
- a program has different states depending if users are logged in, one might use a let-if statement.
+We can combine let and if statements. These statements might be useful when there are variables in our code that are condition-dependent. For example, after I finish a swim workout, my body looks gorgeous. However, on days that I don't swim, my body looks like a bony meat bag. A program that executes that logic could look like this:
 
 ```rust,editable
 
