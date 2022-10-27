@@ -218,12 +218,13 @@ fn main(){ // declare main function
 } // close main function expression
 
 </code></pre></pre>
-<p>We can combine let and if statements. These statements might be useful when there are variables in our code that are condition-dependent. For example, if a program has different states depending if users are logged in, one might use a let-if statement.</p>
+<p>We can combine let and if statements. These statements might be useful when there are variables in our code that are condition-dependent. For example, after I finish a swim workout, my body looks gorgeous. However, on days that I don't swim, my body looks like a bony meat bag.</p>
+<p>a program has different states depending if users are logged in, one might use a let-if statement.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main(){ // declare main function
-    let gym=true; // declare boolen gym variable
-    let jacked = if gym {[&quot;went to the gym&quot;, &quot;jacked&quot;]} else {[&quot;didn't go to the gym&quot;, &quot;not jacked&quot;]}; // boolean let-if statement
-    println!(&quot;Cassidy {} and is {}&quot;, jacked[0], jacked[1]); // print result of let-if statement
+    let swim=true; // declare boolen swim variable
+    let gorgeous = if swim {[&quot;went for a swim&quot;, &quot;gorgeous&quot;]} else {[&quot;didn't for a swim&quot;, &quot;like a bony meat bag&quot;]}; // boolean let-if statement
+    println!(&quot;Cassidy {} and his body looks {}&quot;, gorgeous[0], gorgeous[1]); // print result of let-if statement
 } // close main expression
 
 </code></pre></pre>
