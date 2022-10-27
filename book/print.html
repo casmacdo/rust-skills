@@ -209,13 +209,22 @@ fn main(){ // declare main function
 <p>Using the first example, we can create an if-else control structure that runs code when the first condition is not true:</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main(){ // declare main function
-    let chips=false; // use let statement to exhibit my lack of self control
+    let chips=false; // use let statement to exhibit my outstanding self control
     if chips { // declare if statement with boolean condition
         println!(&quot;I ate the whole bag of chips and feel like trash&quot;) // print result if true
     } else { // close if expression
         println!(&quot;Good work, idiot. You practiced self control!&quot;) // print supportive message
     } // close else expression
 } // close main function expression
+
+</code></pre></pre>
+<p>We can combine let and if statements. This might be useful if there were variables in our code that were condition-dependent. For example, if the program had different states, depending if users were logged in, one could use a let-if statement.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main(){ // declare main function
+    let gym=true; // declare boolen gym variable
+    let jacked = if gym {[&quot;went to the gym&quot;, &quot;jacked&quot;]} else {[&quot;didn't go to the gym&quot;, &quot;not jacked&quot;]}; // boolean let-if statement
+    println!(&quot;Cassidy {} and is {}&quot;, jacked[0], jacked[1]); // print result of let-if statement
+} // close main expression
 
 </code></pre></pre>
 
