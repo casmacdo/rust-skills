@@ -54,5 +54,3 @@ fn main(){ // declare main function
 } // close main expression
 
 ```
-
-
