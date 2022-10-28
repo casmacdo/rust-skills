@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Rust Skills</title>
-        <meta name="robots" content="noindex" />
+        <title>Memory Allocation - Rust Skills</title>
 
 
         <!-- Custom HTML head -->
@@ -82,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li><li class="chapter-item expanded "><a href="control_structures.html"><strong aria-hidden="true">2.</strong> Control Structures</a></li><li class="chapter-item expanded "><a href="memory_allocation.html"><strong aria-hidden="true">3.</strong> Memory Allocation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">1.</strong> Functions</a></li><li class="chapter-item expanded "><a href="control_structures.html"><strong aria-hidden="true">2.</strong> Control Structures</a></li><li class="chapter-item expanded "><a href="memory_allocation.html" class="active"><strong aria-hidden="true">3.</strong> Memory Allocation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -143,91 +142,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="functions"><a class="header" href="#functions">Functions</a></h1>
-<p>The following is a version of the hello world program in the rust documentation. I changed the traditional &quot;hello world&quot; string for something more educational.</p>
-<pre><pre class="playground"><code class="language-rust editable">fn main() { // declare function, name it, and set arguments
-    println!(&quot;Cassidy has giant quads&quot;); // use println! macro and give string argument
-} // close expression
-</code></pre></pre>
-<p>The program contains three components that have specific roles :</p>
-<ul>
-<li>The <code>main</code> function</li>
-<li>The curly brackets</li>
-<li>The <code>println!</code> macro</li>
-</ul>
-<p>When a rust program runs, the <code>main</code> function is the first part that executes.</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main() { // define main function 
-// instructions for the main function go here
-} // close curly bracket and complete expression
-
-</code></pre></pre>
-<p>The rust compiler expects the <code>main</code> function to return closed, regular brackets. In contrast, regular Rust functions allow programmers to define output types and return values. For example, the <code>main</code> function will retun an error if the expression output is not what the compiler expects.</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main() { // define main function 
-6
-} // close curly bracket and complete expression
-
-</code></pre></pre>
-<p>While the Rust <code>main</code> function allows limited output types, regular functions are more flexable. For example, one can define a function called <code>facts</code> that outputs a static string data type, call that function in the <code>main</code> function, and print the output of <code>facts</code> using the <code>println!</code> macro, as seen below:</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main() { // define main function 
-   let truth = facts(); // assign the output of facts to truth using a let statement
-   println!(&quot;{}&quot;, truth) // print the truth using the println! macro
-}
-
-// Below is the second function, which we call in the main function
-
-fn facts() -&gt; &amp;'static str { // declare facts function and assign output type
-    let quads = &quot;Cassidy has giant quads&quot;; // assign some facts to a variable using a let statement
-    quads // make the expression blast out the facts
-} // close the expression
-
-</code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h1>
-<p>Control structures allow programers to insturct computers how to behave when faced with certian conditions.</p>
-<p>Common control structures include:</p>
-<ul>
-<li>if statements</li>
-<li>else statements</li>
-<li>for loops</li>
-<li>while loops</li>
-</ul>
-<p>We can relate the logic of these control sturtures to situations that we encounter in our lives.</p>
-<p>For example: I could be at the grocery store looking at a bag of chips and think to myself: &quot;if I add this bag of chips to my cart, I will likely eat its entire contents before I get home and feel like trash for the rest of the night.&quot;</p>
-<p>A program that executes that logic could look like this:</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main(){ // declare main function
-    let chips=true; // use let statement to exhibit my lack of self control
-    if chips { // declare if statement with boolean condition
-        println!(&quot;I ate the whole bag of chips and feel like trash&quot;) // print result if true
-    } // close if expression
-} // close main function expression
-
-</code></pre></pre>
-<p>Else statements tell the computer to do an action if the first condition is not met.</p>
-<p>Using the first example, we can create an if-else control structure that runs code when the first condition is not true:</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main(){ // declare main function
-    let chips=false; // use let statement to exhibit my outstanding self control
-    if chips { // declare if statement with boolean condition
-        println!(&quot;I ate the whole bag of chips and feel like trash&quot;) // print result if true
-    } else { // close if expression
-        println!(&quot;Good work, idiot. You practiced self control!&quot;) // print supportive message
-    } // close else expression
-} // close main function expression
-
-</code></pre></pre>
-<p>We can combine let and if statements. These statements might be useful when there are variables in our code that are condition-dependent. For example, after I finish a swim workout, my body looks gorgeous. However, on days when I don't swim, my body looks like a bony meat bag. A program that executes that logic could look like this:</p>
-<pre><pre class="playground"><code class="language-rust editable">
-fn main(){ // declare main function
-    let swim=true; // declare boolen swim variable
-    let gorgeous = if swim {[&quot;went for a swim&quot;, &quot;gorgeous&quot;]} else {[&quot;didn't for a swim&quot;, &quot;like a bony meat bag&quot;]}; // boolean let-if statement
-    println!(&quot;Cassidy {}, and his body looks {}&quot;, gorgeous[0], gorgeous[1]); // print result of let-if statement
-} // close main expression
-
-</code></pre></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
+                        <h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
 <p>Efficency is a primary concern in Rust's memory allocation logic. Rust stores information using two types of memory: the stack and the heap.</p>
 <p>One may visulize the stack as pancakes that we and our older brother sequentially weigh, stack, and unstack. Further, we can imagine that our older brother's contamination OCD compels him to put us in a headlock each time we try to take pancakes from locations on the stack other than the top.</p>
 
@@ -235,6 +150,9 @@ fn main(){ // declare main function
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="control_structures.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
 
                         <div style="clear: both"></div>
@@ -243,6 +161,9 @@ fn main(){ // declare main function
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="control_structures.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
             </nav>
 
@@ -287,11 +208,6 @@ fn main(){ // declare main function
 
         <!-- Custom JS scripts -->
 
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </body>
 </html>
