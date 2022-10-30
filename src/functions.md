@@ -3,7 +3,7 @@
 The following is a version of the hello world program in the rust documentation. I changed the traditional "hello world" string for something more educational.
 
 ```rust,editable
-{{#include ../listings/listing-01-01/src/main.rs}}
+{{#include ../examples/01-01/src/main.rs}}
 ```
 
 The program contains three components that have specific roles :
