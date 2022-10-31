@@ -78,13 +78,13 @@ fn main() {
 
 ```
 
-Loops allow us to do stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise, and I could put my teamates in a bad position. 
+Loops allow us to do stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise, and I could put my teamates in a bad position.
 
 ```rust,editable
 
 fn main() {
     let mut intensity = 0; // declare mutable variable using a let statement 
-    let problems: [&str; 5] = ["A guy punched me", "The guy who punched me skated away after I confronted him", "The guy who punched me whined to the ref after he skated away", "The guy who punched me was too scared to look at me for the rest of the game", "The 220 lb teamate of the guy who punched me tried to intimidate the smallest player on our team"]; // declare array of problems, and specify data type and length 
+    let problems: [&str; 5] = ["A guy punched me", "The guy who punched me skated away after I confronted him", "The guy who punched me whined to the ref after he skated away", "The guy who punched me was too scared to look at me for the rest of the game", "The 220 lb teammate of the guy who punched me tried to intimidate the smallest player on our team"]; // declare array of problems, and specify data type and length 
     for problem in problems { // for loop that iterates through elements in array 
         if intensity < 2 { // boolean check until multiplication can represent exponential growth
             intensity += 1; // increment intensity 
