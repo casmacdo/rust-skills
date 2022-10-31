@@ -227,6 +227,40 @@ fn main(){ // declare main function
 } // close main expression
 
 </code></pre></pre>
+<p>The rust compiler expects let-if epressions to produce the same data types. For example, the program below evaluates boolean conditions and outputs what people might call Toronto based on a pre-defined age.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+    let age=28; // create variable using let statement and boolean true 
+    let toronto = if age &lt; 26 {&quot;6&quot;} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
+    println!(&quot;My age is {age} and I call Toronto {toronto}&quot;, age=age.to_string(), toronto=toronto)
+}
+
+</code></pre></pre>
+<p>Below, we change the expression data type for the people who refer to Toronto as &quot;The Six.&quot; Becasue we changed the output data type of this expression, the compiler returns an error. </p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+    let age=28; // create integer variable using let statement  
+    let toronto = if age &lt; 26 {6} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
+    println!(&quot;My age is {age} and I call Toronto {toronto}&quot;, age=age.to_string(), toronto=toronto)
+}
+
+</code></pre></pre>
+<p>Loops allow us to do a lot of stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise as a result, and I would put my teamates in a bad position. </p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+    let mut intensity = 0; // declare mutable variable using a let statement 
+    let problems: [&amp;str; 5] = [&quot;A guy punched me&quot;, &quot;A guy skated away I confronted him&quot;, &quot;A guy whined to the ref after I confronted him&quot;, &quot;The guy I confronted was too scared to look at me for the rest of the game&quot;, &quot;The guy I confronted's 220 lb teamate tried to intimidate the smallest player on our team&quot;]; // declare array of problems, and specify data type and length 
+    for problem in problems { // for loop that iterates through elements in array 
+        if intensity &lt; 2 { // boolean check until multiplication can represent exponential growth
+            intensity += 1; // increment intensity 
+        } else { // if intensity is greater than 2, the following expression can use multiplication to represent exponential growth
+            intensity = intensity * intensity // multiply intensity by itself and redefine variable 
+        }
+        println!(&quot;{problem}, and the intensity is now {intensity}&quot;, problem=problem, intensity=intensity.to_string()) // print current intensity
+    } // close for loop 
+} 
+
+</code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
 <p>Efficency is a primary concern in Rust's memory-allocation logic. Rust stores information using two types of memory: the stack and the heap.</p>
 <p>One may visulize the stack as pancakes that we sequentially weigh, stack, and unstack with our older brother. Further, we can imagine that our older brother's contamination OCD compels him to put us in a headlock each time we try to take pancakes from locations on the stack other than the top.</p>
