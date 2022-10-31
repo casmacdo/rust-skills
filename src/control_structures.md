@@ -78,7 +78,7 @@ fn main() {
 
 ```
 
-Loops allow us to do a lot of stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise as a result, and I would put my teamates in a bad position. 
+Loops allow us to do stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise as a result, and I would put my teamates in a bad position. 
 
 ```rust,editable
 
