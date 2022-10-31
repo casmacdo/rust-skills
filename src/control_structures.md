@@ -84,7 +84,7 @@ Loops allow us to do a lot of stuff fast. For example, if I were playing hockey 
 
 fn main() {
     let mut intensity = 0; // declare mutable variable using a let statement 
-    let problems: [&str; 5] = ["A guy punched me", "A guy skated away I confronted him", "A guy whined to the ref after I confronted him", "The guy I confronted was too scared to look at me for the rest of the game", "The guy I confronted's 220 lb teamate tried to intimidate the smallest player on our team"]; // declare array of problems, and specify data type and length 
+    let problems: [&str; 5] = ["A guy punched me", "A guy skated away after I confronted him", "A guy whined to the ref after I confronted him", "The guy I confronted was too scared to look at me for the rest of the game", "The guy I confronted's 220 lb teamate tried to intimidate the smallest player on our team"]; // declare array of problems, and specify data type and length 
     for problem in problems { // for loop that iterates through elements in array 
         if intensity < 2 { // boolean check until multiplication can represent exponential growth
             intensity += 1; // increment intensity 
