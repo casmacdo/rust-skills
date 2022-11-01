@@ -91,7 +91,7 @@ fn main() {
         } else { // if intensity is greater than 2, the following expression can use multiplication to represent exponential growth
             intensity = intensity * intensity // multiply intensity by itself and redefine variable 
         }
-        println!("{problem}, and the intensity is now {intensity}", problem=problem, intensity=intensity.to_string()) // print current intensity
+        println!("{problem}. The intensity is now {intensity}", problem=problem, intensity=intensity.to_string()) // print current intensity
     } // close for loop 
 } 
 
