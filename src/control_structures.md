@@ -80,7 +80,7 @@ fn main() {
 
 Loops allow us to do stuff fast. Rust has three loop types: for, loop, and while.
 
-For loops run for perscribed iterations. In the example below, I created an array filled with events from a rec-league hockey game in which a player on the other team punched me, cowered behind the ref after I confronted him, and his teammate tried to intimidate the smallest player on our team. The for loop runs through the elements in the array, and the println! macro outputs each event and an intenisty integer. The intensity integers increase exponentially.
+For loops run for perscribed iterations. In the example below, I created an array filled with events from a rec-league hockey game in which a player on the other team punched me, cowered behind the ref after I confronted him, and his teammate tried to intimidate the smallest player on our team. The for loop runs through the elements in the array, and the println! macro outputs each event with an intenisty integer. The intensity integers increase exponentially.
 
 ```rust,editable
 
