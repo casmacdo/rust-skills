@@ -247,7 +247,8 @@ fn main() {
 }
 
 </code></pre></pre>
-<p>Loops allow us to do stuff fast. For example, if I were playing hockey and got upset and tried to fight everyone who tried to hurt me, the intensity of the game may rise, and I could put my teamates in a bad position.</p>
+<p>Loops allow us to do stuff fast. Rust has three loop types: for, loop, and while.</p>
+<p>For loops run for perscribed iterations. In the example below, I created an array filled with events from a rec-league hockey game in which a player on the other team punched me, cowered behind the ref after I confronted him, and his teammate tried to intimidate the smallest player on our team. The for loop runs through the elements in the array, and the println! macro outputs each event with an intenisty integer. The intensity integers increase exponentially.</p>
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() {
     let mut intensity = 0; // declare mutable variable using a let statement 
