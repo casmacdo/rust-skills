@@ -283,7 +283,7 @@ fn main() { // create main function
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() { // open main expression 
     let characteristics: [&amp;str; 4] = [&quot;Saquon Barkley&quot;, &quot;Cassidy MacDonald&quot;, &quot;got them quads&quot;,  &quot;got that dog in him&quot;]; // declare array of static strings
-    let mut i: usize = 0; // declare mutable index counter
+    let mut i: usize = 0; // declare mutable index counter using usize type 
     while characteristics[i] != &quot;got them quads&quot; { // for loop that iterates through elements in array 
        println!(&quot;{} {}&quot;, characteristics[i], characteristics[2]); // print the facts 
        i+=1; // increment counter
