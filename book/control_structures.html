@@ -189,7 +189,7 @@ fn main(){ // declare main function
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() {
     let age=28; // create variable using let statement and boolean true 
-    let toronto = if age &lt; 26 {&quot;6&quot;} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
+    let toronto = if age &lt;= 26 {&quot;6&quot;} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
     println!(&quot;My age is {age} and I call Toronto {toronto}&quot;, age=age.to_string(), toronto=toronto)
 }
 
@@ -198,7 +198,7 @@ fn main() {
 <pre><pre class="playground"><code class="language-rust editable">
 fn main() {
     let age=28; // create integer variable using let statement  
-    let toronto = if age &lt; 26 {6} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
+    let toronto = if age &lt;= 26 {6} else if age &gt; 26 &amp;&amp; age &lt; 86 {&quot;Tdot&quot;} else {&quot;The Big Smoke&quot;}; // declare let-if statement with expressions 
     println!(&quot;My age is {age} and I call Toronto {toronto}&quot;, age=age.to_string(), toronto=toronto)
 }
 

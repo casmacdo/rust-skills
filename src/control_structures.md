@@ -60,7 +60,7 @@ The rust compiler expects let-if epressions to produce the same data types. For 
 
 fn main() {
     let age=28; // create variable using let statement and boolean true 
-    let toronto = if age < 26 {"6"} else if age > 26 && age < 86 {"Tdot"} else {"The Big Smoke"}; // declare let-if statement with expressions 
+    let toronto = if age <= 26 {"6"} else if age > 26 && age < 86 {"Tdot"} else {"The Big Smoke"}; // declare let-if statement with expressions 
     println!("My age is {age} and I call Toronto {toronto}", age=age.to_string(), toronto=toronto)
 }
 
@@ -72,7 +72,7 @@ Below, we change the expression data type for the people who refer to Toronto as
 
 fn main() {
     let age=28; // create integer variable using let statement  
-    let toronto = if age < 26 {6} else if age > 26 && age < 86 {"Tdot"} else {"The Big Smoke"}; // declare let-if statement with expressions 
+    let toronto = if age <= 26 {6} else if age > 26 && age < 86 {"Tdot"} else {"The Big Smoke"}; // declare let-if statement with expressions 
     println!("My age is {age} and I call Toronto {toronto}", age=age.to_string(), toronto=toronto)
 }
 
