@@ -185,8 +185,21 @@ fn facts() -&gt; &amp;'static str { // declare facts function and assign output 
 
 </code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="data-types"><a class="header" href="#data-types">Data Types</a></h1>
-<p>Rust has two, primary data types: scalar and compound.</p>
-<p>Scalar data types contain </p>
+<p>Data primitives are the basis for other data types. Primitives are immutable and typically the lowest level language application of the programming language implimentation.</p>
+<p>Rust has two primitive types: scalar and compound.</p>
+<p>Compared to compound primitives, scalar primitves are less complex. Scalar data types include signed and unsigned integers, floating point, character, boolean, and unit types.</p>
+<p>Signed integers are are whole numbers that can be positive or negative. &quot;Signed&quot; referes to the positive or negative sign. Signed integer types include <code>i8</code>, <code>i16</code>, <code>i32</code>, <code>i64</code>,<code>i128</code>, and <code>isize</code>. The information that proceeds the i these names referes to the amount of data that these types can store.</p>
+<p>Signed, 8-bit data stores values from -128 to 127. Change the increment from <code>-=</code> to <code>+=</code> if you wish to see the upper limit of this data type.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() { // open main expression
+let mut eight: i8 = 0;
+loop {
+    println!(&quot;{}&quot;, eight);
+    eight-=1;
+    };
+} // close main expression
+
+</code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h1>
 <p>Control structures allow programers to insturct computers how to behave when faced with certian conditions.</p>
 <p>Common control structures include:</p>
