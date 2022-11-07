@@ -264,6 +264,21 @@ fn main() {
 } 
 
 </code></pre></pre>
+<p>Loop loops run until they're told to stop. For example, a program could contain a boolean-if statement that checks for the number of iterations the program has completed. If the number of iterations triggers a true response from the if-expression, the programmer can use a break statement to end the loop.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() { // create main function 
+   let mut loops: u8 = 0; // assign mutable, unsiged, eight-bit integer to variable using let statement
+   loop { // open loop expression
+    if loops &lt; 10 { // boolean check if current loop is less than ten 
+        loops+=1; // increment loop number 
+        println!(&quot;Loop number {}&quot;, loops); // print number of loops 
+    } else { // boolean else
+        break // break out of loop if current iteration is &gt;= 10 
+    }; // close else expression 
+   }; // close loop expression 
+} // close main function 
+
+</code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
 <p>Efficency is a primary concern in Rust's memory-allocation logic. Rust stores information using two types of memory: the stack and the heap.</p>
 <p>One may visulize the stack as pancakes that we sequentially weigh, stack, and unstack with our older brother. Further, we can imagine that our older brother's contamination OCD compels him to put us in a headlock each time we try to take pancakes from locations on the stack other than the top.</p>

@@ -98,3 +98,22 @@ fn main() {
 } 
 
 ```
+
+Loop loops run until they're told to stop. For example, a program could contain a boolean-if statement that checks for the number of iterations the program has completed. If the number of iterations triggers a true response from the if-expression, the programmer can use a break statement to end the loop.
+
+
+```rust,editable
+
+fn main() { // create main function 
+   let mut loops: u8 = 0; // assign mutable, unsiged, eight-bit integer to variable using let statement
+   loop { // open loop expression
+    if loops < 10 { // boolean check if current loop is less than ten 
+        loops+=1; // increment loop number 
+        println!("Loop number {}", loops); // print number of loops 
+    } else { // boolean else
+        break // break out of loop if current iteration is >= 10 
+    }; // close else expression 
+   }; // close loop expression 
+} // close main function 
+
+```
