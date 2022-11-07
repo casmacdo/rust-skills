@@ -279,6 +279,18 @@ fn main() { // create main function
 } // close main function 
 
 </code></pre></pre>
+<p>While loops run while a boolean condition is true. For example a while loop may run until an element in an array is found.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() { // open main expression 
+    let characteristics: [&amp;str; 4] = [&quot;Saquon Barkley&quot;, &quot;Cassidy MacDonald&quot;, &quot;got them quads&quot;,  &quot;got that dog in him&quot;]; // declare array of static strings
+    let mut i: usize = 0; // declare mutable index counter
+    while characteristics[i] != &quot;got them quads&quot; { // for loop that iterates through elements in array 
+       println!(&quot;{} {}&quot;, characteristics[i], characteristics[2]); // print the facts 
+       i+=1; // increment counter
+        }; // close while loop 
+    } // close main expression
+
+</code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
 <p>Efficency is a primary concern in Rust's memory-allocation logic. Rust stores information using two types of memory: the stack and the heap.</p>
 <p>One may visulize the stack as pancakes that we sequentially weigh, stack, and unstack with our older brother. Further, we can imagine that our older brother's contamination OCD compels him to put us in a headlock each time we try to take pancakes from locations on the stack other than the top.</p>
