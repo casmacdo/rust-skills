@@ -127,6 +127,7 @@ fn main() { // open main expression
     let mut i: usize = 0; // declare mutable index counter using usize type 
     while characteristics[i] != "got them quads" { // for loop that iterates through elements in array 
        println!("{} {}", characteristics[i], characteristics[2]); // print the facts 
+       println!("{} {}", characteristics[i], characteristics[3]); // print the facts 
        i+=1; // increment counter
         }; // close while loop 
     } // close main expression
