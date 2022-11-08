@@ -146,15 +146,17 @@
 <p>Data primitives are the basis for other data types. Primitives are immutable and typically the lowest level language application of the programming language implimentation.</p>
 <p>Rust has two primitive types: scalar and compound.</p>
 <p>Compared to compound primitives, scalar primitves are less complex. Scalar data types include signed and unsigned integers, floating point, character, boolean, and unit types.</p>
-<p>Signed integers are are whole numbers that can be positive or negative. &quot;Signed&quot; referes to the positive or negative sign. Signed integer types include <code>i8</code>, <code>i16</code>, <code>i32</code>, <code>i64</code>,<code>i128</code>, and <code>isize</code>. The information that proceeds the i these names referes to the amount of data that these types can store.</p>
-<p>Signed, 8-bit data stores values from -128 to 127. Change the increment from <code>-=</code> to <code>+=</code> if you wish to see the upper limit of this data type.</p>
+<p>Signed integers are are whole numbers that can be positive or negative. &quot;Signed&quot; referes to the positive or negative sign. Signed integer types include <code>i8</code>, <code>i16</code>, <code>i32</code>, <code>i64</code>,<code>i128</code>, and <code>isize</code>. The information that proceeds the i these names referes to the amount of data that these types can store. We can find out how much each of these data types stores using the following expression: -(2<sup>n - 1</sup>) to 2<sup>n -
+1</sup> -1. Change the power in the code below to see the data type upper limits.</p>
 <pre><pre class="playground"><code class="language-rust editable">
+extern crate num_traits;
+use num_traits::checked_pow;
+
 fn main() { // open main expression
-let mut eight: i8 = 0;
-loop {
-    println!(&quot;{}&quot;, eight);
-    eight-=1;
-    };
+    let base:u128 = 2; // declare base using unmutable let statement 
+    let power:usize = 127; // declare power using let statement and specifying usize data type
+    let res = checked_pow(base, power); // evaluate expression using checked_pow function
+    println!(&quot;{}&quot;, res.unwrap() -1 , dtypes); // print result using println! macro
 } // close main expression
 
 </code></pre></pre>
