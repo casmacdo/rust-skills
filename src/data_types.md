@@ -19,7 +19,7 @@ fn main() { // open main expression
     let base:u128 = 2; // declare base using unmutable let statement 
     let power:usize = {bits-1} as usize; // declare power using let statement and specifying usize data type
     let res = checked_pow(base, power); // evaluate expression using checked_pow function
-    println!("For i{bits}, the lower limit is -{lower} and the upper limit is {upper}", bits=bits, lower = res.unwrap(), upper=res.unwrap() -1); // print result using println! macro
+    println!("For i{bits}, the lower limit is -{lower} and the upper limit is {upper}", bits=bits, lower=res.unwrap(), upper=res.unwrap() -1); // print result using println! macro
 } // close main expression
 
 ```
