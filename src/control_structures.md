@@ -123,7 +123,7 @@ While loops run while a boolean condition is true. For example a while loop may 
 ```rust,editable
 
 fn main() { // open main expression 
-    let characteristics: [&str; 4] = ["Saquon Barkley", "Cassidy MacDonald", "got them quads",  "got that dog in him"]; // declare array of static strings
+    let characteristics: [&str; 4] = ["Saquon Barkley", "Cassidy MacDonald", "got dem quads",  "got that dog in him"]; // declare array of static strings
     let mut i: usize = 0; // declare mutable index counter using usize type 
     while characteristics[i] != "got them quads" { // for loop that iterates through elements in array 
        println!("{} {}", characteristics[i], characteristics[2]); // print the facts 
