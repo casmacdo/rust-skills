@@ -125,7 +125,7 @@ While loops run while a boolean condition is true. For example a while loop may 
 fn main() { // open main expression 
     let characteristics: [&str; 4] = ["Saquon Barkley", "Cassidy MacDonald", "got dem quads",  "got that dog in him"]; // declare array of static strings
     let mut i: usize = 0; // declare mutable index counter using usize type 
-    while characteristics[i] != "got dem quads" { // for loop that iterates through elements in array 
+    while characteristics[i] != "got dem quads" { // while loop that iterates through elements in array 
        println!("{} {}", characteristics[i], characteristics[2]); // print the facts 
        println!("{} {}", characteristics[i], characteristics[3]); // print the facts 
        i+=1; // increment counter
