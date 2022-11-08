@@ -15,11 +15,13 @@ extern crate num_traits;
 use num_traits::checked_pow;
 
 fn main() { // open main expression
-    let bits:i16 = 8; // declare bits using unmutable let statement 
-    let base:u128 = 2; // declare base using unmutable let statement 
-    let power:usize = {bits-1} as usize; // declare power using let statement and specifying usize data type
-    let res = checked_pow(base, power); // evaluate expression using checked_pow function
-    println!("For i{bits}, the lower limit is -{lower} and the upper limit is {upper}", bits=bits, lower=res.unwrap(), upper=res.unwrap() -1); // print result using println! macro
+    let bits: [i16; 5] = [8, 16, 32, 64, 128]; // create array of bit sizes using i16 becasue 128 is too large for i8
+    let base:u128 = 2; // declare base using unmutable let statement. I used i128 becasue this type is used for the checkedpow expression
+    for bit in bits { // for loop that reads through elements in bits array 
+        let power:usize = {bit-1} as usize; // declare power using let statement and specifying usize data type
+        let res = checked_pow(base, power); // evaluate expression using checked_pow function
+        println!("For i{bit}, the lower limit is -{lower} and the upper limit is {upper}", bit=bit, lower=res.unwrap(), upper=res.unwrap() -1); // print result using println! macro
+    }; // close for loop expression 
 } // close main expression
 
 ```
