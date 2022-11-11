@@ -134,4 +134,27 @@ fn main() { // open main expression
 
 ```
 
-Break and continue statements allow us to control loops. Break statements end loops and continue makes the program move on to the next iteration. For example, if you were playing monopoly with a resonable person and they caught you cheating, you may let them pass go before continuing the game. An un reasonable person, in contrast, may lie, throw a temper tantrum, and flip the game board; thus, ending the game. 
+Break and continue statements allow us to control loops. Break statements end loops and continue makes the program move on to the next iteration. For example, if you were playing monopoly with a resonable person and they caught you cheating, you may let them pass go before continuing the game. An un reasonable person, in contrast, may lie, throw a temper tantrum, and flip the game board; thus, ending the game. A program that demonstrates that scenario follows: 
+
+```rust,editable
+
+fn main() {
+    // open main expression
+    let cheating: [bool; 7] = [true, false, true, false, true, false, true]; // declare array of events
+    let resonable: [bool; 7] = [true, false, false, false, true, false, true]; // declare array of events
+    let mut i: usize = 0; // declare index pointer
+    for cheat in cheating { // open for loop that iterates through boolean array
+        if resonable[i] & cheat { // boolean if statement that checks if the players are reasonable and cheating
+            println!("Pass go"); // print outcome
+            i += 1; // increment counter 
+            continue; // continue 
+        } else if !resonable[i] & cheat { // boolean if that checks if the players are not reasonable and cheating
+            println!("Break that shit, King Kong"); // print outcome
+            break; // Asshole broke the game
+        }; // close expression
+        i += 1; // increment counter if both conditions are not true
+    } // close loop expression
+} // close main expression 
+
+
+```

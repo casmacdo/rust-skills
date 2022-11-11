@@ -311,7 +311,28 @@ fn main() { // open main expression
     } // close main expression
 
 </code></pre></pre>
-<p>Break and continue statements allow us to control loops. Break statements end loops and continue makes the program move on to the next iteration. For example, if you were playing monopoly with a resonable person and they caught you cheating, you may let them pass go before continuing the game. An un reasonable person, in contrast, may lie, throw a temper tantrum, and flip the game board; thus, ending the game. </p>
+<p>Break and continue statements allow us to control loops. Break statements end loops and continue makes the program move on to the next iteration. For example, if you were playing monopoly with a resonable person and they caught you cheating, you may let them pass go before continuing the game. An un reasonable person, in contrast, may lie, throw a temper tantrum, and flip the game board; thus, ending the game. A program that demonstrates that scenario follows: </p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+    // open main expression
+    let cheating: [bool; 7] = [true, false, true, false, true, false, true]; // declare array of events
+    let resonable: [bool; 7] = [true, false, false, false, true, false, true]; // declare array of events
+    let mut i: usize = 0; // declare index pointer
+    for cheat in cheating { // open for loop that iterates through boolean array
+        if resonable[i] &amp; cheat { // boolean if statement that checks if the players are reasonable and cheating
+            println!(&quot;Pass go&quot;); // print outcome
+            i += 1; // increment counter 
+            continue; // continue 
+        } else if !resonable[i] &amp; cheat { // boolean if that checks if the players are not reasonable and cheating
+            println!(&quot;Break that shit, King Kong&quot;); // print outcome
+            break; // Asshole broke the game
+        }; // close expression
+        i += 1; // increment counter if both conditions are not true
+    } // close loop expression
+} // close main expression 
+
+
+</code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="memory-allocation"><a class="header" href="#memory-allocation">Memory Allocation</a></h1>
 <p>Efficency is a primary concern in Rust's memory-allocation logic. Rust stores information using two types of memory: the stack and the heap.</p>
 <p>One may visulize the stack as pancakes that we sequentially weigh, stack, and unstack with our older brother. Further, we can imagine that our older brother's contamination OCD compels him to put us in a headlock each time we try to take pancakes from locations on the stack other than the top.</p>
