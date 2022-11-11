@@ -133,3 +133,5 @@ fn main() { // open main expression
     } // close main expression
 
 ```
+
+Break and continue statements allow us to control loops. Break statements end loops and continue makes the program move on to the next iteration. For example, if you were playing monopoly with a resonable person and they caught you cheating, you may let them pass go before continuing the game. An un reasonable person, in contrast, may lie, throw a temper tantrum, and flip the game board; thus, ending the game. 
