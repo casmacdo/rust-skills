@@ -159,4 +159,23 @@ fn main() {
 
 ```
 
-Break and control statements can also be associated with specific loops
+Break and control statements can also be associated with specific loops. For example, you could use this if you had two arrays of names and to check if there were name duplicates. 
+
+```rust,editable
+
+fn main() {
+    // open main expression
+    let names_1: [&str; 4] = ["Fred", "Cocco", "Sally-Anne", "Ron"]; // declare array of names
+     let names_2: [&str; 4] = ["Judy", "George", "Cocco", "Jen"]; // declare array of names
+    'list_1: for name_1 in names_1 { // open for loop that iterates through names_1 array
+        for name_2 in names_2 { // open second for loop that iterates through second array 
+            if name_2 == name_1 { // boolean check to see if there are duplicate names
+                println!("{name_1} is in array one and {name_2} is in array two", name_1=name_1, name_2=name_2); // print result if match 
+                break 'list_1 // break out of outer loop
+            } // close if expression
+        } // close inner loop expression 
+    } // close outer loop expression 
+} // close main expression 
+
+
+```
