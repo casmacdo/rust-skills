@@ -49,3 +49,26 @@ fn facts() -> &'static str { // declare facts function and assign output type
 } // close the expression
 
 ```
+
+Modules are collections of things like functions, structs, traits, impl, blocks, or other modules. Within modules, there is public and private visability. By deafault, modules have private visability, which means that module components are not usable outside of the modules. If needed, one can use the pub keyword to make an item visable outside of the module. The example below makes a function inside of a module visable in the main program.
+
+```rust,editable
+
+fn main() {
+    // define main function
+    let domination = social_science::econ(); // assign the output of public module to variable
+    println!("{}", domination); // print using println! macro
+}
+
+// Below is a module in which we have a public function that has public access 
+
+mod social_science {
+    pub fn econ() -> &'static str { 
+        // declare function and set output type. I used a static string becasue I want the output to go to the stack and make the program faster
+        let globalization = "Westernization"; // a string to a variable using a let statement
+        globalization // pass the variable through the expression
+    } // close the expression
+}
+
+
+```
