@@ -203,6 +203,26 @@ mod social_science {
 
 
 </code></pre></pre>
+<p>We can use functions to calculate descriptive statistics For example, we can calculate the mean of an integer array. This code can likely be more generalizable becasue it currently requires arrays that meet the defined type specifications. A vector type might be more generalizable and sacrifice speed and memory-footprint size. </p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+    let weights: [f64; 7] = [61.3, 62.1, 62.1, 61.2, 61.2, 61.3, 62.2]; // array of my weights from the past seven days using float 64 data
+    let avg = mean(weights); // assign output of mean function to variable 
+    println!(&quot;My average weight over the past seven days was {}&quot;, avg); // print result and context 
+    }
+    
+// below, I create a mean function 
+    
+fn mean(values: [f64; 7]) -&gt; f64 {
+    let mut sum: f64 = 0.0; // declare initial sum using decimal becasue it is a float type 
+    let length = values.len() as f64; // declare length using len() method. Need to change to float to divide the sum by the length later 
+    for value in values { // loop through array 
+        sum += value; // sum values 
+    }; // close expression 
+    sum/length // return mean 
+} // close function expression 
+
+</code></pre></pre>
 
                     </main>
 
